@@ -32,11 +32,11 @@ services:
       context: ./client
     volumes:
       - /app/node_modules
-      - ./server:/app
+      - ./client:/app
   worker:
     build:
       dockerfile: Dockerfile.dev
       context: ./worker
     volumes:
       - /app/node_modules
-      - ./server:/app
+      - ./worker:/app
