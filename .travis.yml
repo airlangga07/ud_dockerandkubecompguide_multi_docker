@@ -15,7 +15,7 @@ after_success:
   - docker build -t airlangga07:multi-worker ./worker
 
   # login to the docker cli
-  - docker login -u "$DOCKER_ID" -p "$DOCKER_PASSWORD" docker.io
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
   # take those images and push the to docker hub
   - docker push airlangga07:multi-client
