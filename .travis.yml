@@ -8,6 +8,9 @@ before_install:
 script:
   - docker run -e CI=true airlangga07/react-test:latest npm run test
 
+# do note that when you build and push docker image
+# you need to specify the version as well
+# otherwise it will failed to upload the image
 after_success:
   - docker build -t airlangga07/multi-client:latest ./client
   - docker build -t airlangga07/multi-nginx:latest ./nginx
