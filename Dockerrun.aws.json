@@ -3,6 +3,7 @@
     "containerDefinitions": [
         {
             "name": "client",
+            "memoryReservation": 256,
             "image": "airlangga07/multi-client",
             "hostname": "client",
             "essential": false
