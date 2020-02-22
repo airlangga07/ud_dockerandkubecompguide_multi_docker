@@ -1,0 +1,6 @@
+username: postgres
+password: postgrespassword
+fibvalues
+
+ AKIASK7YLUTRAQEEQDU6 
+0vwlrgwy77HX9Mfx7jfQAqbdtZYCqZgKsaNjIM2B
